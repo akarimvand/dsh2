@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAPRA Dashboard (React)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for a more refined look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1e293b; /* slate-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #475569; /* slate-600 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* slate-500 */
+    }
+    body {
+      font-family: 'Roboto', sans-serif; /* A common Material Design font */
+      background-color: #0f172a; /* slate-900 for base if gradient doesn't cover all */
+      color: #e2e8f0; /* slate-200 for base text */
+      margin: 0; /* Ensure no default margin */
+    }
+    /* Ensure root takes full height */
+    html, body, #root {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll on body if sidebar transitions cause it */
+    }
+    .font-roboto_app { /* Specific class for React app if needed */
+        font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "papaparse": "https://esm.sh/papaparse@5.3.2",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "chart.js": "https://esm.sh/chart.js@3.9.1/auto",
+    "@/": "./"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

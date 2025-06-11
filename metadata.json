@@ -1,0 +1,6 @@
+{
+  "name": "SAPRA Dashboard (Material Dark Theme)",
+  "description": "A standalone dashboard application for SAPRA (Smart Access to Project Activities) featuring a Material Design dark theme, built with Tailwind CSS and vanilla JavaScript. It provides visualizations and data summaries for project progress.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
